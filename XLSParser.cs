@@ -12,8 +12,8 @@ namespace Aquiris.Tools.XLS
 			Sheet = p_sheet;
 		}
 
-		public DataTable Select(string p_select){
-			return ParseQuery("SELECT "+p_select+" FROM "+m_sheet+"");
+		public DataTable Parse(){
+			return ParseQuery("SELECT * FROM "+m_sheet+"");
 		}
 
 		private DataTable ParseQuery(string p_selectQuery){
